@@ -1,0 +1,58 @@
+import Factory from './toDoObjects.js';
+import Render from './render.js';
+
+document.addEventListener('DOMContentLoaded', (e) => {
+
+  let p = Factory.createProject('test');
+
+  let i = Factory.createToDoItem(
+      "Walk the Dog",
+      new Date(),
+      "home",
+      "1 hour",
+      "Take him around the block",
+      1,
+      false); 
+
+  let m = Factory.createToDoItem(
+      "Mail Letter",
+      new Date(),
+      "post office",
+      "30 minutes",
+      "Need gas on the way",
+      1,
+      false); 
+
+  let o = Factory.createToDoItem(
+      "Renew lisecne",
+      new Date(),
+      "automobile agency",
+      "1 hour",
+      "Better looks good for new photo",
+      1,
+      false); 
+  
+  p.addNewToDoItem(i);
+  p.addNewToDoItem(m);
+  p.addNewToDoItem(o);
+
+
+  let p2 = Factory.createProject('sample1');
+  let p3 = Factory.createProject('sampe2');
+
+
+
+  Render.displayHeaders();
+  let newBtn = document.querySelector('#new-btn');
+  newBtn.addEventListener('click',Render.newItemForm);
+
+  Render.condensedToDoItem(i);
+  Render.condensedToDoItem(m);
+  Render.condensedToDoItem(o);
+  Render.expandedToDoItem(i);
+
+
+
+
+});
+

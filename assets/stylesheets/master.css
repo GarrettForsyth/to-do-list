@@ -1,0 +1,62 @@
+body {
+  background-image: url(../images/concrete_seamless.png);
+  font-family: 'Finger Paint', cursive; }
+
+#main-container {
+  display: flex; }
+
+#current-list {
+  flex: 7; }
+
+.to-do-item {
+  display: flex; }
+
+.cell {
+  margin-top: 0.5rem;
+  width: 33%; }
+
+#current-expanded {
+  flex: 3; }
+
+.expanded-property {
+  display: flex; }
+
+.cell2 {
+  flex: 1;
+  width: 50%;
+  text-align: right; }
+
+.page-title {
+  width: 100%;
+  text-align: center; }
+  .page-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem; }
+
+.btn {
+  display: inline;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.btn:hover {
+  color: red; }
+
+.strike {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: red;
+  top: 1rem;
+  left: 0px; }
+
+form {
+  text-align: right; }
+
+label {
+  margin-right: 10px; }
+
+/*# sourceMappingURL=master.css.map */
